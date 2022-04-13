@@ -4,5 +4,5 @@ misma cantidad de dinero puede ser que te entregue el monto en diferentes combin
 de billetes, a veces te entrega todos del mismo valor, a veces diferentes. 
 ¿Cómo sabe el cajero cuál es la combinación de billetes adecuada? Crearemos un algoritmo que responda esa pregunta.
 
-## ejecución
+## Ejecución
 https://replit.com/@RonaldoJimenez2/cajeroAutomatico#index.js
