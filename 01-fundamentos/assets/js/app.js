@@ -12,13 +12,13 @@ let a = 10,
 
 const saludo =  c + d;
 
-// console.log('%c Mis variables', 'color:blue; font-weight: bold');
-// console.log({ a });
-// console.log({ b });
-// console.log({ c });
+console.log('%c Mis variables', 'color:blue; font-weight: bold');
+console.log({ a });
+console.log({ b });
+console.log({ c });
 
 c = 'Hola de nuevo';
 
-// console.table({a, b, c, d, x });
+console.table({a, b, c, d, x, saludo });
 
 let miNuevoNombre = 'Fernando Herrera';
