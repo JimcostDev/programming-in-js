@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+	<style>
+		.caja {
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			background: #04e7d4;
+			margin: 10px;
+			display: inline-block;
+			text-align: center;
+			font-size: 30px;
+			color: #fff;
+			font-family: Arial;
+		}
+		.btn{
+			padding: 10px;
+			background-color: #f8f409;
+			color: #000;
+			border: none;
+			border-radius: 5px;
+		}
+
+		.btn:hover{
+			cursor: pointer;
+			background-color: #f8f409b4;
+		}
+	</style>
+</head>
+<body>
+
+	<button class="btn" id="btn-saludar">Saludar</button>
+	<button class="btn" id="btn-hola">Hola Mundo</button>
+	<button class="btn" id="btn-caja">Crear caja</button>
+	<input type="text" id="btn-copiar" value="Copia este texto">
+	<section id="contenedor">
+		
+	</section>
+
+	<script>
+		/* Exixten 2 modelos de eventos diferentes:
+			- Modelo basico de eventos.
+				Caracteristicas limitadas.
+				Pero Funciona en todos los navegadores.
+				onClick()
+
+			- Modelo de eventos estandar.
+				Podemos hacer mas cosas con el
+				Todos los navegadores lo soportan.
+				addEventListener('click', function);
+		*/
+
+		
+		const saludo = () =>{
+			alert('Hola');
+		}
+
+		const hola= () =>{
+			alert('Hola Mundo ');
+		}
+
+		const copiar = () =>{
+			alert('referencia copiada');
+		}
+
+		let btnSaludar = document.getElementById('btn-saludar');
+		btnSaludar.addEventListener('click', saludo);
+
+		let btnHola = document.getElementById('btn-hola');
+		btnHola.addEventListener('mouseenter', hola);
+
+		let btnCopiar = document.getElementById('btn-copiar');
+		btnCopiar.addEventListener('copy', copiar);
+
+		
+
+		function crearCaja(){
+			var contenedor = document.getElementById('contenedor');
+			var caja = document.createElement('div');
+			caja.className = 'caja';
+			contenedor.appendChild(caja);
+		}
+
+		var btnCaja = document.getElementById('btn-caja');
+		btnCaja.addEventListener('click', crearCaja);
+		
+		/* Algunos de los eventos mas usados:			
+			click
+			focus
+			blur
+			change
+			onload
+			mouseover
+			mouseout
+			resize 
+			submit
+		*/
+
+	</script>
+</body>
+</html>
