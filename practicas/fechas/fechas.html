@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas</title>
+</head>
+<body>
+
+    <h2 class="fecha" id="fecha"></h2>
+    <script>
+        let fecha = new Date();
+
+
+        const mostrarFecha = () => {
+            let date = new Date();
+            let text = document.getElementById('fecha');
+            text.innerHTML = date;
+        }
+
+        let interval = setInterval(mostrarFecha, 1000);
+        
+        console.log(fecha.getHours() + ' Horas');
+        console.log(fecha.getMinutes() + ' Minutos');
+
+        let semana = ['Domingo', 
+                    'Lunes',
+                    'Martes', 
+                    'Miercoles', 
+                    'Jueves', 
+                    'Viernes', 
+                    'Sabado'];
+
+        console.log('Dia: '+ semana[fecha.getDay()]);
+    </script>
+</body>
+</html>
