@@ -1,40 +1,37 @@
-const piedra = 'p', 
-      papel = 'pa',
-      tijera = 't';
+// CONSTANTES (ID)
+const piedra = 'PI', 
+      papel = 'PA',
+      tijera = 'TI';
+
+// VARIABLES PARA JUGAR
+let usuario = 'PA',
+    maquina = 'TI'
 
 // false = perder
 // true = ganar 
 
 function play(user, machine){
-    // PIEDRA
-    if (user === piedra && machine === papel){
+    // PIERDE USUARIO
+    if ((user === piedra && machine === papel) || 
+        (user === papel && machine === tijera) || 
+        (user === tijera && machine === piedra)){
         return false
     }
-    else if (user === piedra && machine === tijera){
+    // GANA USUARIO
+    else if ((user === piedra && machine === tijera) ||
+             (user === papel && machine === piedra)  || 
+             (user === tijera && machine === papel)){
         return true
     }
-    // PAPEL
-    else if (user === papel && machine === piedra){
-        return true
-    }
-    else if (user === papel && machine === tijera){
-        return false
-    }
-    // TIJERA
-    else if (user === tijera && machine === piedra){
-        return false
-    }
-    else if (user === tijera && machine === papel){
-        return true
-    }
+    // EMPATE
     else {
         return 'empate'
     }
 }
 
 
-// ===================== EJECUCION ==================== //
-let resultado = play('t', 'pa');
+// EJECUCIÓN
+let resultado = play(usuario, maquina);
 
 if(resultado === true){
     console.log('Gano user');
@@ -45,3 +42,7 @@ else if(resultado === false){
 else if (resultado === 'empate'){
     console.log('Empate');
 }
+
+
+
+
