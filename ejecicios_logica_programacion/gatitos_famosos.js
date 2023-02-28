@@ -42,6 +42,7 @@ findFamousCats([
 // Output: ["Milo", "Gizmo"]
 */
 
+/* ----------------- SOLUCIÓN 1 ------------------------- */
 function findFamousCats(cats) {
     // Creamos un objeto en el cual guardaremos los nombres y el número máximo de seguidores
     let catStats = {
@@ -73,10 +74,35 @@ function findFamousCats(cats) {
   
     // Al final solo retornamos LOS NOMBRES
     return catStats.catNames;
-  }
+};
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+/* ----------------- SOLUCIÓN 2 ------------------------- */
+function findFamousCats_2(cats) {
+  let gatosFamosos = {};
+  
+  // calcular total de seguidores por cada gato
+  cats.forEach(gato => {
+    return gatosFamosos[gato.name] = gato.followers.reduce((sum,follower) => sum + follower)   
+  });
 
-
-  /* ----------------- EJECUCIÓN ------------------------- */
+  // saber quien tiene mas seguidores - retornamos el nombre (key)
+  let famoso = Math.max(...Object.values(gatosFamosos));
+    return(Object.keys(gatosFamosos).filter(key => gatosFamosos[key] === famoso));
+};
+// .
+// .
+// .
+// .
+// .
+// .
+// .
+/* ----------------- EJECUCIÓN ------------------------- */
 let r = findFamousCats([
         {
           name: "Mimi",
