@@ -50,6 +50,21 @@ function run(){
     let numeros = [primerNumero, segundoNumero, tercerNumero, cuartoNumero, quintoNumero];
     let resultado = numeroMayor(numeros);
     console.log(`El número mayor es (forma dinámica): ${resultado}`);
+
+    // forma dinámica con for
+    console.log("Forma dinámica con for");
+    let numeros2 = [];
+    for (let i = 0; i < 5; i++) {
+        let numero = readNumber(i + 1);
+        numeros2.push(numero);
+    }
+    let resultado2 = numeroMayor(numeros2);
+    console.log(`El número mayor es (forma dinámica con for): ${resultado2}`);
 }
 
 run();
+
+// for
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}

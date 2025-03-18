@@ -1,6 +1,7 @@
+const prompt = require('prompt-sync')();
 // tines 3 intentos para adivinar un número aleatorio del 0 al 10, suerte.
 function getRandom() {
-    let num = Math.random()*10;
+    let num = Math.random()*10; 
     return parseInt(num);
 }
 
@@ -12,11 +13,11 @@ while(true){
     let adivina = parseInt(prompt('Escribe un número, solo tienes 3 intentos: '));
     intentos += 1
     if(intentos == 3){
-        alert(` perdiste, el número era: ${numero}`);
+        console.log(` perdiste, el número era: ${numero}`);
         break;
     }
     else if (adivina == numero){
-        alert('Felecidades, adivinaste')
+        console.log('Felecidades, adivinaste')
         break;
     }
 }
