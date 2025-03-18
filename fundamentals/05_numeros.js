@@ -1,7 +1,9 @@
+const prompt = require('prompt-sync')({ sigint: true });
+
 // Declaración de variables numéricas
-let edad = 23;
+let edad = 25;
 console.log(typeof edad); // Salida: 'number'
-console.log(edad); // Salida: 23
+console.log(edad); // Salida: 25
 
 let numero1 = 2;
 let numero2 = 4;
@@ -19,6 +21,11 @@ console.log(vidas); // Salida: 2
 vidas += 5; // Equivalente a vidas = vidas + 5
 console.log(vidas); // Salida: 7
 
+x = 10.8;
+y = parseInt(x);
+console.log(y);
+console.log(Number.isInteger(y));
+
 // Formato de número científico
 let numeroGrande = 4.5e18;
 console.log(numeroGrande); // Salida: 4500000000000000000
@@ -27,6 +34,6 @@ let numeroPequeño = 1e-10;
 console.log(numeroPequeño); // Salida: 0.0000000001
 
 // Lectura de datos del usuario
-let edadUsuario = '23'//prompt('Por favor dime tu edad:');
+let edadUsuario = prompt('Por favor dime tu edad: ');
 console.log(typeof edadUsuario); // Salida: 'string'
 console.log(edadUsuario);

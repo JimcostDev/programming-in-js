@@ -1,11 +1,12 @@
 // Variables
-let nombre = 'Ronaldo';
+let nombre = 'Ronaldo'; 
 let apellido = 'Jimenez Acosta';
 let telefono = '1326753768';
 
 // Concatenar strings
 let nombreCompleto = nombre + ' ' + apellido;
 console.log(nombreCompleto); // Salida: Ronaldo Jimenez Acosta
+console.log(`${nombre} ${apellido}`); 
 
 // Diferentes usos de las comillas
 let presentacion = `

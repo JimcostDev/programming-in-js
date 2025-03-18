@@ -1,3 +1,6 @@
+// Importar la biblioteca
+const prompt = require('prompt-sync')({ sigint: true });
+
 // Calcula el Índice de Masa Corporal (IMC)
 function calcularIMC(peso, estatura) {
     return peso / (estatura ** 2);
