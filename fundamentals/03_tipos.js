@@ -21,3 +21,7 @@ if (tipoDato === 'number') {
 } else {
   console.log('Tipo de dato no reconocido');
 }
+
+// Symbol, es un tipo de dato primitivo que se utiliza para crear identificadores únicos.
+let simbolo = Symbol('jimcostdev');
+console.log(`La variable es de tipo: (${typeof simbolo}), valor: ${simbolo.toString()}`);
