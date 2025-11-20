@@ -1,10 +1,8 @@
-// Mientras la condición sea true, el bloque de código se ejecutará
+//  Esto es un ciclo infinito porque la condición siempre es true
+// Se usa cuando no se conoce el número de iteraciones a realizar
 // while (true) {
 //   console.log('Mientras la condición sea "true" el bloque de código se va a ejecutar');
-// //   Esto es un ciclo infinito porque la condición siempre es true
-// //   se usa cuando no se conoce el número de iteraciones a realizar
 // }
-
 
 // Ejemplo 1: Ciclo while con condición
 let contador = 0;

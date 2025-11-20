@@ -1,21 +1,23 @@
 // Definir un arreglo de números
 let numeros = [1, 2, 3, 4];
 console.log(numeros);
-console.log(typeof numeros); // En JavaScript, un arreglo es de tipo "object"
+console.log(typeof numeros); // "object" en JavaScript
 
 // Definir un arreglo de tareas
 let tareas = ['limpiar la casa', 'estudiar', 'hacer ejercicio'];
 console.log(tareas);
 
 // Arreglo con diferentes tipos de datos
-let tipos = [1, true, 'hola'];
+let tipos = [1, true, 'hola', ['py', 'js', 'go']];
 console.log(tipos);
+// Imprimir go desde el arreglo anidado
+console.log(tipos[3][2]);
 
 // Acceder a elementos individuales
-console.log(numeros[0]);    // Primer elemento del arreglo "numeros"
-console.log(tareas[1]);     // Segundo elemento del arreglo "tareas"
+console.log(numeros[0]);   
+console.log(tareas[1]);     
 
-// En JavaScript los strings son inmutables, igual que en Python:
+// En JavaScript los strings son inmutables
 let text = 'Hola';
 // text[0] = 'W'; // Esto no es posible, ya que no se pueden modificar directamente
 

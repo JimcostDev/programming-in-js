@@ -1,4 +1,4 @@
-// map se usa para transformar los elementos de un arreglo
+// map() se usa para transformar los elementos de un arreglo
 // y devolver un nuevo arreglo con los elementos transformados
 // por ejemplo, duplicar los valores de una lista de números
 

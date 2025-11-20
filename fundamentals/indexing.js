@@ -1,15 +1,15 @@
 let text = "Ella sabe JS";
 
 // Acceder a caracteres individuales:
-console.log("Primer carácter:", text[0]);       // "E"
-console.log("Carácter en la posición 10:", text[10]); // "J"
+console.log("Primer carácter:", text[0]);       
+console.log("Carácter en la posición 10:", text[10]); 
 
 // Tamaño del string:
 let size = text.length;
 console.log("Tamaño del string:", size);
 
 // Último carácter (usando la propiedad length):
-console.log("Último carácter:", text.charAt(size - 1)); // "S"
+console.log("Último carácter:", text.charAt(size - 1)); 
 
 // Slicing básico:
 // Extraer desde el índice 0 hasta el 5 (sin incluir el 5)
